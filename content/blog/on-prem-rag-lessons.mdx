@@ -1,0 +1,26 @@
+---
+title: "What building an on-prem RAG platform actually taught me about retrieval"
+date: "2026-01-15"
+category: "AI Engineering"
+tags: ["RAG", "LangChain", "FAISS", "LLM"]
+excerpt: "Notes from shipping a secure, on-premises RAG platform at KONE — and why the retrieval layer mattered more than the model."
+draft: true
+---
+
+> **Draft note:** this is placeholder long-form content, structured so it's ready to publish. Replace this note and the sections below with your own words before publishing.
+
+## The constraint that shaped everything
+
+The brief was simple to state and hard to satisfy: give people inside the company a conversational way to search internal documents, without any of that data leaving the network. That single constraint — full on-premises operation — ruled out the easiest path (a hosted LLM API with a vector DB in the cloud) and pushed the whole system toward a local stack: **Python, LangChain, and a FAISS vector store**.
+
+## Ingestion was the unglamorous, essential part
+
+Before any retrieval could happen, the documents had to become usable. That meant building an ingestion pipeline with `PyMuPDF` and `pdfplumber` to extract clean text from over 100 internal PDFs — automating a process that used to be manual, error-prone, and slow. Getting this layer right removed copy-paste mistakes from downstream reporting workflows entirely.
+
+## Retrieval quality is the real lever
+
+The instinct when a RAG system feels "off" is to reach for a bigger or better model. In practice, most of the gains here came from earlier in the pipeline: chunking strategy, embedding choices, and how the FAISS index was queried. Tuning that layer is what moved both **query latency** (down roughly 30%) and **retrieval relevance** (up roughly 40%) against the original keyword-search baseline — before the generation model ever entered the picture.
+
+## What's next
+
+> Fill in: what would you do differently next time? What's the next system you want to build on top of this?

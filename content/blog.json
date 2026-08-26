@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "on-prem-rag-lessons",
+    "title": "What building an on-prem RAG platform actually taught me about retrieval",
+    "date": "2026-01-15",
+    "category": "AI Engineering",
+    "tags": ["RAG", "LangChain", "FAISS", "LLM"],
+    "excerpt": "Notes from shipping a secure, on-premises RAG platform at KONE — and why the retrieval layer mattered more than the model.",
+    "draft": true
+  }
+]

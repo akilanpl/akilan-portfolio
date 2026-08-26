@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Climate Detection Using AI",
+    "venue": "IJITRA",
+    "year": "2024",
+    "type": "Journal Paper",
+    "role": "Co-author",
+    "abstract": "Abstract not yet publicly listed — will be added once the DOI is confirmed.",
+    "doi": null,
+    "pdf": null,
+    "bibtex": null,
+    "relatedProject": "climate-detection-ai"
+  },
+  {
+    "title": "Second co-authored paper (IJITRA)",
+    "venue": "IJITRA",
+    "year": "2024",
+    "type": "Journal Paper",
+    "role": "Co-author",
+    "abstract": "Details pending — this slot is reserved for the second of two papers co-authored during the CSE (AI & ML) program.",
+    "doi": null,
+    "pdf": null,
+    "bibtex": null,
+    "relatedProject": null,
+    "placeholder": true
+  }
+]

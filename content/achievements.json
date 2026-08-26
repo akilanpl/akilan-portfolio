@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Smart India Hackathon 2024 — National Finalist",
+    "org": "Government of India",
+    "date": "2024",
+    "category": "Hackathon",
+    "description": "Reached the national final with the Offline Mapping & Navigation System, an offline geospatial navigation pipeline built in Python."
+  },
+  {
+    "title": "PyTorch Open Source Contribution Merged",
+    "org": "PyTorch (Meta)",
+    "date": "2025",
+    "category": "Open Source",
+    "description": "Serialization security documentation merged into PyTorch core, improving guidance for the broader developer community."
+  },
+  {
+    "title": "Co-author, 2 Published Research Papers",
+    "org": "IJITRA",
+    "date": "2024",
+    "category": "Research",
+    "description": "Co-authored two academic papers in AI/ML during the CSE (AI & ML) program, published at IJITRA."
+  }
+]

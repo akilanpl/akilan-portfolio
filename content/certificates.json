@@ -1,0 +1,17 @@
+[
+  {
+    "title": "AI Agents Intensive Program",
+    "issuer": "Google",
+    "description": "5-day program on AI agents, LLM workflows, and hands-on AI Studio projects."
+  },
+  {
+    "title": "AWS Cloud Foundations",
+    "issuer": "AWS Academy",
+    "description": "Practical training in EC2, S3, networking, IAM, and core cloud concepts."
+  },
+  {
+    "title": "Azure for Data Science",
+    "issuer": "Microsoft",
+    "description": "Built data workflows across ingestion, preparation, analytics, and ML on Azure."
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "interests": [
+    {
+      "title": "Retrieval-Augmented Generation & On-Prem LLM Deployment",
+      "description": "Making conversational AI viable inside data-sensitive environments — retrieval quality, chunking strategy, and inference that never leaves the perimeter.",
+      "evidence": "enterprise-rag-platform"
+    },
+    {
+      "title": "Applied Computer Vision",
+      "description": "CNN-based classification with an emphasis on preprocessing and evaluation rigor, not just architecture.",
+      "evidence": "climate-detection-ai"
+    },
+    {
+      "title": "Offline & Low-Connectivity Geospatial Systems",
+      "description": "Movement classification and navigation logic that holds up without live map data or constant connectivity.",
+      "evidence": "offline-mapping-navigation"
+    },
+    {
+      "title": "ML Security & Reproducibility",
+      "description": "Safer serialization and loading paths for shared models — the kind of unglamorous infrastructure work that prevents real incidents.",
+      "evidence": "pytorch-contribution"
+    }
+  ],
+  "philosophy": "Placeholder — a short statement of research philosophy will go here.",
+  "current": [],
+  "future": [],
+  "collaborations": [],
+  "readingList": [],
+  "notes": []
+}

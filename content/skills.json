@@ -1,0 +1,51 @@
+[
+  {
+    "category": "Core Languages",
+    "items": [
+      { "name": "Python", "level": 95, "note": "Primary language" },
+      { "name": "SQL", "level": 70 },
+      { "name": "JavaScript", "level": 65 },
+      { "name": "Java", "level": 60 },
+      { "name": "C", "level": 55 }
+    ]
+  },
+  {
+    "category": "AI / ML",
+    "items": [
+      { "name": "RAG", "level": 90, "usedIn": ["enterprise-rag-platform"] },
+      { "name": "LangChain", "level": 88, "usedIn": ["enterprise-rag-platform"] },
+      { "name": "FAISS", "level": 85, "usedIn": ["enterprise-rag-platform"] },
+      { "name": "On-prem LLM deployment", "level": 82, "usedIn": ["enterprise-rag-platform"] },
+      { "name": "Document ingestion & retrieval", "level": 85, "usedIn": ["enterprise-rag-platform"] },
+      { "name": "CNN", "level": 75, "usedIn": ["climate-detection-ai"] },
+      { "name": "Model evaluation", "level": 78 },
+      { "name": "Secure model loading (safetensors)", "level": 80 }
+    ]
+  },
+  {
+    "category": "Cloud",
+    "items": [
+      { "name": "AWS (EC2, S3, IAM, networking)", "level": 72 },
+      { "name": "Azure (data workflows, ML)", "level": 65 },
+      { "name": "Google AI Studio", "level": 70 }
+    ]
+  },
+  {
+    "category": "Backend & Systems",
+    "items": [
+      { "name": "Flask", "level": 75 },
+      { "name": "REST APIs", "level": 78 },
+      { "name": "Python scripting & automation", "level": 88 },
+      { "name": "Git / GitHub", "level": 85 }
+    ]
+  },
+  {
+    "category": "Data & ML Engineering",
+    "items": [
+      { "name": "Data pipelines", "level": 80 },
+      { "name": "Feature engineering", "level": 72 },
+      { "name": "Geospatial data (OSMnx, tile maps)", "level": 75, "usedIn": ["offline-mapping-navigation"] },
+      { "name": "Model experimentation", "level": 76 }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "githubUsername": "akilanpl",
+  "contributions": [
+    {
+      "project": "PyTorch (Meta)",
+      "type": "Serialization Security Documentation",
+      "url": "https://github.com/pytorch/pytorch/pull/172743",
+      "status": "Merged",
+      "description": "Identified and documented a serialization security risk in torch.export (torch.load with weights_only=False); proposed and documented safer loading paths (weights_only=True, safetensors format).",
+      "impact": "Merged into the PyTorch core repository, improving security guidance for millions of developers worldwide."
+    }
+  ]
+}

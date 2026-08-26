@@ -1,0 +1,27 @@
+{
+  "name": "Akilan P L",
+  "roles": [
+    "AI/ML Engineering Student",
+    "RAG Systems Builder",
+    "Open Source Contributor",
+    "Future Founder"
+  ],
+  "tagline": "B.E. CSE (AI/ML) student building production RAG systems and on-premises LLM deployments — with end-to-end experience shipping enterprise AI at KONE.",
+  "location": "Chennai, Tamil Nadu, India",
+  "email": "akilanpalaniyappan105@gmail.com",
+  "phone": "+91 78452 73946",
+  "links": {
+    "linkedin": "https://linkedin.com/in/akilan-palaniyappan",
+    "github": "https://github.com/akilanpl",
+    "resume": "/resume/Akilan_P_L_Resume.pdf"
+  },
+  "profileSummary": "AI/ML engineering student specialising in production RAG systems and on-premises LLM deployment, with end-to-end experience building enterprise AI platforms at KONE. Strong Python and backend foundation; SIH 2024 Finalist; open-source contributor to PyTorch. Targeting Software Engineering / ML Engineering internships.",
+  "stats": [
+    { "label": "Projects shipped", "value": 3 },
+    { "label": "Research papers", "value": 2 },
+    { "label": "Open-source PRs merged", "value": 1 },
+    { "label": "Hackathon finals", "value": 1 },
+    { "label": "Internships", "value": 1 },
+    { "label": "Students trained", "value": 100, "suffix": "+" }
+  ]
+}

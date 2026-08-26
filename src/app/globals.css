@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  border-color: theme("colors.line.DEFAULT");
+}
+
+.dark * {
+  border-color: theme("colors.line.dark");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-canvas text-ink dark:bg-canvas-dark dark:text-ink-dark antialiased;
+  font-feature-settings: "ss01" 1, "cv11" 1;
+}
+
+::selection {
+  background: rgba(52, 87, 255, 0.18);
+}
+
+/* Eyebrow / metadata label style used across the site — the site's signature
+   device: every section is framed like a paper or changelog header. */
+.meta-label {
+  @apply font-mono text-[11px] uppercase tracking-[0.16em] text-muted dark:text-muted-dark;
+}
+
+.hairline {
+  @apply border-t border-line dark:border-line-dark;
+}
+
+.container-content {
+  @apply mx-auto w-full max-w-content px-6 md:px-10;
+}
+
+.focus-ring {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 focus-visible:ring-offset-canvas dark:focus-visible:ring-offset-canvas-dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Prose styling for MDX blog content */
+.prose-akilan {
+  @apply max-w-none text-[1.05rem] leading-[1.75] text-ink/90 dark:text-ink-dark/90;
+}
+.prose-akilan h2 {
+  @apply font-display text-2xl mt-10 mb-4 tracking-tight;
+}
+.prose-akilan h3 {
+  @apply font-display text-xl mt-8 mb-3 tracking-tight;
+}
+.prose-akilan p {
+  @apply mb-5;
+}
+.prose-akilan code {
+  @apply font-mono text-[0.9em] bg-ink/[0.05] dark:bg-ink-dark/[0.08] px-1.5 py-0.5 rounded;
+}
+.prose-akilan pre {
+  @apply bg-[#0B0C0E] text-[#F2F3F5] rounded-xl p-5 overflow-x-auto text-sm my-6;
+}
+.prose-akilan a {
+  @apply underline decoration-accent-blue/40 underline-offset-4 hover:decoration-accent-blue;
+}
+.prose-akilan ul {
+  @apply list-disc pl-6 mb-5 space-y-1.5;
+}
+.prose-akilan blockquote {
+  @apply border-l-2 border-accent-blue/40 pl-4 italic text-muted dark:text-muted-dark;
+}

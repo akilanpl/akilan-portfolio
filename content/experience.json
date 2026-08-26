@@ -1,0 +1,42 @@
+[
+  {
+    "id": "kone-ai-intern",
+    "org": "KONE",
+    "orgType": "Enterprise Innovation Team",
+    "role": "Artificial Intelligence Intern",
+    "location": "Chennai, Tamil Nadu, India",
+    "start": "2025-12",
+    "end": "2026-01",
+    "current": false,
+    "summary": "Built an on-premises RAG platform for secure, conversational access to enterprise knowledge, and automated the enterprise document ingestion pipeline that fed it.",
+    "highlights": [
+      {
+        "text": "Built an on-premises RAG platform using Python, LangChain, and a FAISS vector store, enabling secure conversational access to enterprise knowledge across 100+ internal documents.",
+        "metrics": ["~30% lower query latency", "~40% improvement in retrieval relevance vs. baseline keyword search"]
+      },
+      {
+        "text": "Automated the PDF ingestion & extraction pipeline for 100+ enterprise documents using Python (PyMuPDF, pdfplumber).",
+        "metrics": ["~80% reduction in manual processing time", "Eliminated copy-paste errors across reporting workflows"]
+      }
+    ],
+    "tech": ["Python", "LangChain", "FAISS", "PyMuPDF", "pdfplumber", "RAG"]
+  },
+  {
+    "id": "perplexity-campus-partner",
+    "org": "Perplexity.ai",
+    "orgType": "Campus Ambassador Program",
+    "role": "Campus Ambassador",
+    "location": "Chennai, Tamil Nadu, India",
+    "start": "2025-09",
+    "end": "2025-11",
+    "current": false,
+    "summary": "Ran hands-on AI tool workshops that drove measurable adoption of AI-assisted research workflows across campus.",
+    "highlights": [
+      {
+        "text": "Ran hands-on AI tool workshops for 100+ students, driving measurable adoption of AI-assisted research workflows on campus.",
+        "metrics": ["100+ students trained"]
+      }
+    ],
+    "tech": ["Perplexity", "AI Literacy", "Workshop Facilitation"]
+  }
+]

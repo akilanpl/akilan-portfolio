@@ -1,0 +1,79 @@
+[
+  {
+    "slug": "enterprise-rag-platform",
+    "title": "Enterprise RAG Platform",
+    "category": "AI / LLM Systems",
+    "featured": true,
+    "period": "11/2025 – 01/2026",
+    "oneLiner": "An on-premises retrieval-augmented generation system for secure enterprise knowledge access, with zero external data exposure.",
+    "problem": "Enterprise teams needed conversational access to internal documentation, but sending proprietary data to third-party LLM APIs was a non-starter for security and compliance.",
+    "background": "Built during an AI internship at KONE's Enterprise Innovation Team, where the baseline was a keyword-search system across a large internal document set.",
+    "architecture": "Documents are parsed and chunked, embedded, and indexed in a FAISS vector store. A LangChain-orchestrated retrieval layer serves relevant chunks to an on-prem LLM for conversational answers — the entire pipeline runs inside the enterprise network with no data leaving the perimeter.",
+    "techStack": ["Python", "LangChain", "FAISS", "On-prem LLM deployment", "Vector search"],
+    "metrics": [
+      { "label": "Query latency", "value": "~30% lower", "detail": "vs. baseline keyword search" },
+      { "label": "Retrieval relevance", "value": "~40% improvement", "detail": "vs. baseline keyword search" },
+      { "label": "Document coverage", "value": "100+ internal documents" },
+      { "label": "Data exposure", "value": "Zero external", "detail": "fully on-premises" }
+    ],
+    "challenges": [
+      "Keeping the entire retrieval and inference pipeline on-premises while maintaining response quality comparable to hosted LLM APIs.",
+      "Tuning chunking and retrieval parameters so relevance improved measurably over the existing keyword-search baseline."
+    ],
+    "lessons": "Retrieval quality is often the real bottleneck in RAG systems, not the generation model — most of the latency and relevance gains came from getting chunking, indexing, and retrieval right before touching the LLM layer.",
+    "futureWork": "Extending ingestion to more document types and adding structured evaluation for retrieval quality over time.",
+    "links": {
+      "github": "https://github.com/akilanpl/enterprise-rag-platform",
+      "demo": null
+    }
+  },
+  {
+    "slug": "offline-mapping-navigation",
+    "title": "Offline Mapping & Navigation System",
+    "category": "Geospatial / Systems",
+    "featured": true,
+    "period": "08/2024 – 04/2025",
+    "badge": "SIH 2024 Finalist",
+    "oneLiner": "An offline geospatial navigation pipeline that distinguishes highway vs. service-road movement without any live connectivity.",
+    "problem": "Reliable navigation in low-connectivity regions requires movement classification that doesn't depend on live map or GPS-quality data.",
+    "background": "Built for Smart India Hackathon 2024, where the team reached the national final.",
+    "architecture": "Uses tile maps, heading vectors, and coordinate clustering algorithms to detect whether a device is moving along a highway or a parallel service road, entirely offline.",
+    "techStack": ["Python", "Tile maps", "Heading vectors", "Coordinate clustering", "OSMnx"],
+    "metrics": [
+      { "label": "Recognition", "value": "SIH 2024 National Finalist" }
+    ],
+    "challenges": [
+      "Distinguishing highway vs. service-road movement using only coordinate and heading data, without live map matching."
+    ],
+    "lessons": "Classical geospatial clustering techniques can substitute effectively for connectivity-dependent map matching when engineered carefully.",
+    "futureWork": "Expanding the classifier to more road topologies and integrating it into a full offline navigation app.",
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  },
+  {
+    "slug": "climate-detection-ai",
+    "title": "Climate Detection Using AI",
+    "category": "Computer Vision",
+    "featured": false,
+    "period": "08/2024 – 12/2024",
+    "oneLiner": "A CNN-based climate classification model with a custom preprocessing and evaluation pipeline, published as research.",
+    "problem": "Automating climate/weather-pattern classification from image data for downstream research use.",
+    "background": "Co-authored as one of two academic research papers published at IJITRA during the CSE (AI & ML) program.",
+    "architecture": "A convolutional neural network trained on a custom preprocessing pipeline, with a dedicated evaluation harness for measuring classification performance.",
+    "techStack": ["Python", "CNN", "Model evaluation", "Data preprocessing"],
+    "metrics": [
+      { "label": "Publication", "value": "Published at IJITRA" }
+    ],
+    "challenges": [
+      "Building a clean preprocessing pipeline for noisy, varied climate imagery."
+    ],
+    "lessons": "Investing time in preprocessing and evaluation infrastructure paid off more than iterating on model architecture alone.",
+    "futureWork": "Extending the dataset and benchmarking against additional model architectures.",
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  }
+]
