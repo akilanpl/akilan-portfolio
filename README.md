@@ -30,3 +30,12 @@ Open http://127.0.0.1:4173 in your browser.
 The website uses static assets and can be hosted by any static web server. The `.openai/hosting.json` file records its existing Sites identity.
 
 Three.js is distributed under the MIT license; see `dist/assets/THREE-LICENSE.txt`.
+
+## Deploy to Vercel
+
+The root `vercel.json` configures a static deployment of `dist` with no framework or build command. From this repository, sign in to Vercel and deploy:
+
+```sh
+npx vercel login
+npx vercel deploy --prod
+```
