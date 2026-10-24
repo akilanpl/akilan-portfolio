@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://akilan-portfolio-henna.vercel.app/sitemap.xml
