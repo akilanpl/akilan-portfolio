@@ -1,0 +1,18 @@
+name: Static portfolio checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check the site entry point and JavaScript syntax
+        run: |
+          test -s dist/index.html
+          node --input-type=module --check < dist/app.js
+      - name: Validate hosting configuration
+        run: python3 -m json.tool vercel.json > /dev/null
